@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="txtVisualizza"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTableWidget" name="tabella">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <row>
+       <property name="text">
+        <string>Caratteri</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Caratteri (senza spazi)</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Parole</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Frasi</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Paragrafi</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Dati</string>
+       </property>
+      </column>
+      <item row="1" column="0">
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <layout class="QHBoxLayout" name="grafico">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="btnAnalizza">
+      <property name="text">
+       <string>Analizza</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>782</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionCarica"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCarica">
+   <property name="text">
+    <string>Carica</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
